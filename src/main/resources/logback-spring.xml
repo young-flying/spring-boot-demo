@@ -17,7 +17,7 @@
         <file>${log.path}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         	<!-- 定义了日志的切分方式——把每一天的日志归档到一个文件中 -->
-            <fileNamePattern>logback.%d{yyyy-MM-dd_HH-mm}.log</fileNamePattern>
+            <fileNamePattern>logback.%d{yyyy-MM-dd.log</fileNamePattern>
             <!-- 表示只保留最近30天的日志，以防止日志填满整个磁盘空间 -->
             <maxHistory>30</maxHistory>
             <!-- 用来指定日志文件的上限大小，例如设置为1GB的话，那么到了这个值，就会删除旧的日志 -->
